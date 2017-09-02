@@ -1,0 +1,32 @@
+front end mmall-fe
+
+1. generating private/public key pair:
+    A. ssh-keygen -t rsa -C "your_email@example.com"
+    B. cat ~/.ssh/
+    C. cat ~/.ssh/id_rsa.pub
+    // copy the content into github to generate SSH key
+    
+2. ALl files are put in doc file    
+    A. git clone <src>
+    // Initilize this file
+    B. git init
+    C. ls -al // existing .git 
+    // local folder connect to remote folder
+    D. git remote add origin  <src>
+    // pull origin master code
+    E. git pull origin master
+    F. git status // show all files that have been changed
+    G. git add. 
+    H. git commit -am 'test' // summit all with notation
+    I. git push --set-upstream origin master // set remote branch
+    I. git push // push all file into remote file
+
+3. Set git ignore
+    A. vim .gitignore
+        Content:
+            .DS_Store
+            /node_modules/
+            /dist/
+    B. git checkout -b mmall_v1.0 // set a new folder and change from master branch to mmall_v1.0
+    C. git branch
+    
